@@ -4,8 +4,8 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import App from "./App";
 import './index.css'
 
-// const domain = "YOUR_AUTH0_DOMAIN";
-// const clientId = "YOUR_CLIENT_ID";
+const domain = "dax-auth.us.auth0.com";
+const clientId = "n4cFX9yFeE209waXu0N7YLaDnTWp2KD0";
 
 createRoot(document.getElementById('root')).render(
   <Auth0Provider
