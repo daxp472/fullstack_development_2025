@@ -3,14 +3,7 @@ const axios = require("axios");
 const Redis = require("ioredis");
 
 const app = express();
-const redis = new Redis({
-  host: "localhost",
-  port: 6379,
-  retryStrategy: (times) => {
-    // reconnect after
-    return Math.min(times * 50, 2000);
-  }
-});
+const redis = new Redis({ host: "redis", port: 6379 });
 const PORT = 3000;
 
 // Example API to cache (we'll use JSONPlaceholder)
